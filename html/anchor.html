@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anchor Tags Example</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+
+      a:hover {
+        color: #0056b3;
+      }
+
+      #internal-link {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Internal and External Anchor Tags</h1>
+
+    <!-- Internal Anchor Tag -->
+    <p><a href="#internal-link">Go to Internal Link</a></p>
+
+    <div id="internal-link">
+      <h2>Internal Link Content</h2>
+      <p>This is the content that the internal link will jump to.</p>
+    </div>
+
+    <!-- External Anchor Tag -->
+    <p>
+      <a href="https://www.example.com" target="_blank"
+        >Visit External Website</a
+      >
+    </p>
+  </body>
+</html>

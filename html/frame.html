@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A Simple Frameset Document</title>
+</head>
+
+<frameset cols="30%, 70%">
+    <frameset rows="30%,70%">
+        <frame src="frame1.html" name="frame1">
+        <frame src="https://www.rockstargames.com/reddeadredemption2" name="frame2">
+    </frameset>
+    <frame src="november.png" name="frame3">
+    <noframes>
+        <p>This frameset document contains:</p>
+        <ul>
+            <li><a href="contents_of_frame1.html" target="_top">Some neat contents</a></li>
+            <li><img src="photo.jpg" alt="A neat image"></li>
+            <li><a href="contents_of_frame3.html" target="_top">Some other neat contents</a></li>
+        </ul>
+    </noframes>
+</frameset>
+
+</html>
