@@ -1,0 +1,8 @@
+- write a program to swap 2 variables using pointers.
+- write a program to print the table of natural numbers using for loop
+- write a program to implement the studewnts class
+- write a program to print the value of x, where x is equal to a/b - c
+- write a program to implemenmt addition of two complex numbers
+- create a class of rectangle with private members of length and breath and then create the constructor
+- write a program to demonstrate the concept of copy constructor
+- write a program of template and insert the numbers using array and display the output in the sorting order

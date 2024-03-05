@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialogs Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      button:focus {
+        outline: none;
+      }
+      .dialog-container {
+        max-width: 400px;
+        margin: 20px auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dialog-container">
+      <script>
+        function showConfirmation() {
+          var result = confirm("Are you sure you want to proceed?");
+          if (result) {
+            alert("Confirmed!");
+          } else {
+            alert("Cancelled!");
+          }
+        }
+
+        function showAlert() {
+          alert("This is an alert message!");
+        }
+
+        function showPrompt() {
+          var userInput = prompt("Please enter your name:", "");
+          if (userInput !== null && userInput !== "") {
+            alert("Hello, " + userInput + "!");
+          } else {
+            alert("You did not enter your name.");
+          }
+        }
+      </script>
+
+      <button onclick="showConfirmation()">Show Confirmation Dialog</button>
+      <button onclick="showAlert()">Show Alert Dialog</button>
+      <button onclick="showPrompt()">Show Prompt Dialog</button>
+    </div>
+  </body>
+</html>
